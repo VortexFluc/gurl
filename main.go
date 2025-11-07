@@ -1,6 +1,3 @@
-/*
-Copyright © 2025 VFlux
-*/
 package main
 
 import "gurl/cmd"

@@ -1,7 +1,3 @@
-/*
-Copyright © 2025 VFlux
-*/
-
 package cmd
 
 import (
