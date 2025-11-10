@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"gurl/client"
 	"log"
+	"os"
 
 	"github.com/spf13/cobra"
 )
@@ -34,6 +35,10 @@ Returns non-zero status code if the request is failed.
 		}
 
 		fmt.Printf("%s\n", res)
+
+		if r.IsError {
+			os.Exit(1)
+		}
 	},
 }
 
