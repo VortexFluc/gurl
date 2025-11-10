@@ -32,5 +32,5 @@ func Execute() {
 
 func init() {
 	rootCmd.PersistentFlags().BoolVarP(&insecure, "insecure", "k", false, "Skip certificate verification")
-	rootCmd.PersistentFlags().StringVarP(&format, "format", "f", "string", "Quiet mode")
+	rootCmd.PersistentFlags().StringVarP(&format, "format", "f", "string", "Response format")
 }
