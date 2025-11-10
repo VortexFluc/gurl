@@ -8,6 +8,7 @@ import (
 
 var (
 	insecure bool
+	format   string
 )
 
 var rootCmd = &cobra.Command{
@@ -31,4 +32,5 @@ func Execute() {
 
 func init() {
 	rootCmd.PersistentFlags().BoolVarP(&insecure, "insecure", "k", false, "Skip certificate verification")
+	rootCmd.PersistentFlags().StringVarP(&format, "format", "f", "string", "Quiet mode")
 }
