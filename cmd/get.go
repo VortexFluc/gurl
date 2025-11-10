@@ -28,7 +28,12 @@ Returns non-zero status code if the request is failed.
 			log.Fatal(err)
 		}
 
-		fmt.Printf("%s\n", string(r.Response))
+		res, err := Format(r.Response, format)
+		if err != nil {
+			log.Fatal(err)
+		}
+
+		fmt.Printf("%s\n", res)
 	},
 }
 
