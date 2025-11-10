@@ -12,7 +12,7 @@ func Format(data []byte, formatType string) (string, error) {
 		return fmt.Sprintf("%s", data), nil
 	case "json":
 		var prettyJSON bytes.Buffer
-		err := json.Indent(&prettyJSON, data, "", "	")
+		err := json.Indent(&prettyJSON, data, "", "  ")
 		if err != nil {
 			return "", err
 		}
