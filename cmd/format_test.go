@@ -22,7 +22,7 @@ func TestFormat(t *testing.T) {
 			name:       "format json",
 			data:       []byte(`{"hello": "world"}`),
 			formatType: "json",
-			want:       "{\n\t\"hello\": \"world\"\n}",
+			want:       "{\n  \"hello\": \"world\"\n}",
 		},
 		{
 			name:       "format raw",
